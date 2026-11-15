@@ -1,0 +1,13 @@
+participant_id,mode,trial_id,video_file,fps,frame_action,frame_pinch_closed,frame_response,pinch_ms,closed_to_resp_ms,latency_ms,notes
+P01,gesture,6,P01_gesture.mp4,120,1213,1216,1234,25.0,150.0,175.0,
+P01,gesture,9,P01_gesture.mp4,120,2394,2407,2420,108.3,108.4,216.7,pipeline latency spike (input_lat: 50.1ms)
+P02,gesture,5,P02_gesture.mp4,120,1518,1523,1537,41.7,116.6,158.3,
+P02,gesture,21,P02_gesture.mp4,120,6134,6145,6153,91.7,66.6,158.3,
+P03,gesture,4,P03_gesture.mp4,120,392,400,416,66.7,133.3,200.0,
+P03,gesture,23,P03_gesture.mp4,120,7883,7895,7908,100.0,108.3,208.3,wrong_target initial attempt / retry (input_lat: 42.6ms)
+P04,gesture,4,P04_gesture.mp4,120,379,382,396,25.0,116.7,141.7,
+P04,gesture,20,P04_gesture.mp4,120,4727,4735,4744,66.7,75.0,141.7,
+P05,gesture,12,P05_gesture.mp4,120,1833,1837,1847,33.3,83.4,116.7,camera pipeline lag spike (input_lat: 57.0ms)
+P05,gesture,19,P05_gesture.mp4,120,3672,3682,3696,83.3,116.7,200.0,
+P06,gesture,4,P06_gesture.mp4,120,396,401,410,41.7,75.0,116.7,backtrack / wrong target
+P06,gesture,23,P06_gesture.mp4,120,9077,9084,9098,58.3,116.7,175.0,

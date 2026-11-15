@@ -1,0 +1,61 @@
+participant_id,mode,trial_id,video_file,fps,frame_action,frame_response,latency_ms,notes
+P01,touch,4,P01_touch.mp4,120,522,526,33.3,
+P01,gesture,5,P01_gesture.mp4,120,679,701,183.3,wrong_target initial attempt (notAdjacent) / retry
+P01,gesture,6,P01_gesture.mp4,120,1213,1234,175.0,
+P01,touch,7,P01_touch.mp4,120,815,820,41.7,
+P01,gesture,9,P01_gesture.mp4,120,2394,2420,216.7,pipeline latency spike (input_lat: 50.1ms)
+P01,touch,13,P01_touch.mp4,120,2127,2131,33.3,
+P01,touch,16,P01_touch.mp4,120,2596,2601,41.7,longer selection time (2956.4ms)
+P01,gesture,17,P01_gesture.mp4,120,4070,4093,191.7,notAdjacent miss on 1st attempt
+P01,gesture,21,P01_gesture.mp4,120,4915,4942,225.0,camera-to-cursor lag spike (input_lat: 53.8ms)
+P01,touch,23,P01_touch.mp4,120,3885,3890,41.7,
+P02,touch,3,P02_touch.mp4,120,580,584,33.3,
+P02,gesture,5,P02_gesture.mp4,120,1518,1537,158.3,
+P02,touch,7,P02_touch.mp4,120,892,897,41.7,
+P02,gesture,9,P02_gesture.mp4,120,2759,2779,166.7,input_lat: 28.2ms
+P02,gesture,11,P02_gesture.mp4,120,3087,3109,183.3,camera pipeline lag spike (input_lat: 38.9ms)
+P02,touch,13,P02_touch.mp4,120,1988,1992,33.3,
+P02,touch,14,P02_touch.mp4,120,2066,2072,50.0,touch buffer delay (input_lat: 1.08ms)
+P02,gesture,21,P02_gesture.mp4,120,6134,6153,158.3,
+P02,touch,23,P02_touch.mp4,120,3405,3409,33.3,
+P02,gesture,24,P02_gesture.mp4,120,6812,6832,166.7,input_lat: 29.7ms
+P03,gesture,4,P03_gesture.mp4,120,392,416,200.0,
+P03,touch,6,P03_touch.mp4,120,420,425,41.7,
+P03,touch,8,P03_touch.mp4,120,637,643,50.0,touch buffer delay (input_lat: 1.65ms)
+P03,gesture,9,P03_gesture.mp4,120,4474,4498,200.0,
+P03,touch,11,P03_touch.mp4,120,2652,2658,50.0,edge of touch zone
+P03,touch,13,P03_touch.mp4,120,3941,3947,50.0,
+P03,gesture,15,P03_gesture.mp4,120,5606,5631,208.3,minor finger occlusion
+P03,gesture,18,P03_gesture.mp4,120,6759,6780,175.0,
+P03,gesture,23,P03_gesture.mp4,120,7883,7908,208.3,wrong_target initial attempt (notAdjacent) / retry (input_lat: 42.6ms)
+P03,touch,24,P03_touch.mp4,120,7434,7437,25.0,
+P04,gesture,4,P04_gesture.mp4,120,379,396,141.7,
+P04,touch,6,P04_touch.mp4,120,469,472,25.0,
+P04,touch,15,P04_touch.mp4,120,1804,1808,33.3,
+P04,touch,16,P04_touch.mp4,120,1834,1838,33.3,
+P04,touch,17,P04_touch.mp4,120,1866,1872,50.0,
+P04,touch,18,P04_touch.mp4,120,1902,1907,41.7,
+P04,gesture,19,P04_gesture.mp4,120,4621,4638,141.7,
+P04,gesture,20,P04_gesture.mp4,120,4727,4744,141.7,
+P04,gesture,22,P04_gesture.mp4,120,4977,4999,183.3,wrong_target initial attempt (notAdjacent) / retry (input_lat: 36.1ms)
+P04,gesture,23,P04_gesture.mp4,120,5309,5326,141.7,
+P05,gesture,8,P05_gesture.mp4,120,286,306,166.7,
+P05,gesture,12,P05_gesture.mp4,120,1833,1847,116.7,camera pipeline lag spike (input_lat: 57.0ms)
+P05,touch,7,P05_touch.mp4,120,409,414,41.7,
+P05,touch,13,P05_touch.mp4,120,1376,1379,25.0,
+P05,gesture,14,P05_gesture.mp4,120,2198,2220,183.3,
+P05,gesture,15,P05_gesture.mp4,120,2359,2374,125.0,
+P05,touch,16,P05_touch.mp4,120,1536,1539,25.0,
+P05,gesture,19,P05_gesture.mp4,120,3672,3696,200.0,
+P05,touch,23,P05_touch.mp4,120,2587,2592,41.7,
+P05,touch,24,P05_touch.mp4,120,2620,2626,50.0,
+P06,gesture,4,P06_gesture.mp4,120,396,410,116.7,backtrack / wrong target
+P06,touch,6,P06_touch.mp4,120,253,259,50.0,edge of touch zone
+P06,touch,7,P06_touch.mp4,120,284,291,58.3,
+P06,touch,11,P06_touch.mp4,120,1449,1454,41.7,edge of touch zone
+P06,touch,12,P06_touch.mp4,120,1545,1552,58.3,
+P06,gesture,15,P06_gesture.mp4,120,4474,4500,216.7,
+P06,gesture,16,P06_gesture.mp4,120,4763,4775,100.0,
+P06,touch,17,P06_touch.mp4,120,1959,1966,58.3,
+P06,gesture,21,P06_gesture.mp4,120,8200,8214,116.7,
+P06,gesture,23,P06_gesture.mp4,120,9077,9098,175.0,

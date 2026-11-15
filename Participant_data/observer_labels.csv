@@ -1,0 +1,104 @@
+participant_id,mode,trial_id,rater,false_negative,false_positive,unclear,notes
+P01,gesture,5,rater1,0,1,0,"Accidental pinch while moving hand, wrong cell selected"
+P01,gesture,9,rater1,1,0,0,"Pinch closed twice; first attempt unselected, second registered"
+P01,gesture,17,rater1,0,1,0,Accidental pinch registered while repositioning hand
+P01,gesture,21,rater1,1,0,0,Initial pinch closed without selection; second pinch registered
+P01,touch,16,rater1,0,0,1,Hand obscured screen view on external camera
+P02,gesture,11,rater1,1,0,0,"First pinch closed without response, second pinch registered target"
+P02,gesture,12,rater1,1,0,0,"First pinch closed without response, second pinch registered target"
+P02,touch,9,rater1,0,0,1,Hand covered screen on external camera view
+P03,gesture,4,rater1,1,0,0,"Initial pinch closed without selection, second pinch registered"
+P03,gesture,7,rater1,0,1,0,Accidental pinch registered while moving hand across grid
+P03,gesture,9,rater1,1,0,0,Pinch closed twice before selection registered
+P03,gesture,14,rater1,1,0,0,Pinch clearly attempted but not registered
+P03,gesture,23,rater1,1,1,0,"First pinch unselected, followed by accidental pinch on movement"
+P03,touch,8,rater1,1,0,0,Target tap not registered
+P03,touch,11,rater1,0,0,1,Finger position obscured at screen border on external camera
+P04,gesture,4,rater1,1,0,0,"Pinch closed near top edge without selection, second pinch registered"
+P04,gesture,16,rater1,1,0,0,"Pinch closed without selection, second pinch registered"
+P04,gesture,22,rater1,0,1,0,"Pinch while moving hand, wrong cell selected"
+P04,touch,13,rater1,0,1,0,Accidental touch registered while resting palm on glass
+P05,gesture,5,rater1,1,0,0,"Pinch closed on target cell without selection, second pinch registered"
+P05,gesture,12,rater1,1,0,0,"Pinch closed above grid cell, selection registered on second attempt"
+P05,gesture,21,rater1,0,1,0,Accidental pinch registered while adjusting hand position
+P05,touch,1,rater1,0,0,1,Hand shadow blocked tripod recording camera view of touch point
+P06,gesture,4,rater1,0,1,0,"Pinch while moving hand, wrong cell selected"
+P06,gesture,12,rater1,0,1,0,Accidental pinch registered during fast hand transition
+P06,gesture,13,rater1,1,1,0,"First pinch unselected, accidental pinch registered during hand movement"
+P06,gesture,17,rater1,0,1,0,Accidental pinch registered before reaching target
+P06,gesture,20,rater1,0,1,0,Unintended pinch registered while repositioning hand
+P06,gesture,24,rater1,0,1,0,Accidental pinch registered on invalid cell while reaching
+P06,touch,6,rater1,1,0,0,"Light tap at edge of touch zone unselected, second tap registered"
+P06,touch,11,rater1,1,0,0,Finger tapped grid cell twice before selection registered
+P06,touch,34,rater1,0,1,0,Finger drag registered accidental secondary touch
+P06,touch,40,rater1,0,1,0,Accidental palm contact triggered unintended selection
+P01,gesture,2,rater2,0,0,0,
+P01,gesture,6,rater2,0,0,0,
+P01,gesture,9,rater2,1,0,0,"Hand pinched on cell with no UI trigger, subsequent pinch selected target"
+P01,gesture,17,rater2,0,1,0,Unintentional pinch registered on nearby cell while shifting position
+P01,gesture,19,rater2,0,0,0,
+P01,touch,4,rater2,0,0,0,
+P01,touch,8,rater2,0,0,1,Hand shadow obscured contact point on camera
+P01,touch,9,rater2,0,0,0,
+P01,touch,12,rater2,0,0,0,
+P01,touch,22,rater2,0,0,0,
+P02,gesture,5,rater2,1,0,0,"Pinch motion ignored by system on first try, second attempt registered"
+P02,gesture,6,rater2,0,0,0,
+P02,gesture,14,rater2,0,0,0,
+P02,gesture,20,rater2,0,0,0,
+P02,gesture,23,rater2,0,0,0,
+P02,touch,3,rater2,0,0,0,
+P02,touch,4,rater2,0,0,0,
+P02,touch,8,rater2,0,0,0,
+P02,touch,10,rater2,0,0,1,Finger occlusion blocked camera view at upper corner
+P02,touch,13,rater2,0,0,0,
+P03,gesture,10,rater2,0,0,0,
+P03,gesture,11,rater2,0,0,0,
+P03,gesture,21,rater2,0,0,0,
+P03,gesture,22,rater2,0,0,0,
+P03,gesture,24,rater2,0,0,0,
+P03,touch,8,rater2,1,0,0,Initial screen tap failed to trigger grid response
+P03,touch,10,rater2,0,0,0,
+P03,touch,12,rater2,0,0,0,
+P03,touch,13,rater2,0,1,0,Accidental tap registered off-target during fast input sequence
+P03,touch,14,rater2,0,0,0,
+P03,touch,16,rater2,0,0,0,
+P03,touch,19,rater2,0,0,0,
+P03,touch,39,rater2,0,0,0,
+P03,touch,41,rater2,0,0,0,
+P04,gesture,5,rater2,1,0,0,"Air pinch missed detection threshold, repeated gesture triggered selection"
+P04,gesture,10,rater2,0,0,0,
+P04,gesture,12,rater2,0,0,0,
+P04,gesture,14,rater2,0,0,0,
+P04,gesture,20,rater2,0,0,0,
+P04,touch,3,rater2,0,0,0,
+P04,touch,5,rater2,0,0,0,
+P04,touch,11,rater2,0,0,0,
+P04,touch,23,rater2,0,0,0,
+P04,touch,24,rater2,0,0,0,
+P05,gesture,3,rater2,1,0,0,"Pinch closure unacknowledged by system, prompt cleared on second pinch"
+P05,gesture,4,rater2,0,0,0,
+P05,gesture,17,rater2,0,0,0,
+P05,gesture,20,rater2,0,0,0,
+P05,gesture,22,rater2,0,0,0,
+P05,touch,2,rater2,0,0,0,
+P05,touch,5,rater2,0,0,0,
+P05,touch,6,rater2,0,0,0,
+P05,touch,14,rater2,0,0,1,Camera angle cut off view of touch interaction point
+P05,touch,19,rater2,0,0,0,
+P06,gesture,7,rater2,0,0,0,
+P06,gesture,12,rater2,0,1,0,Hand movement across interface triggered false pinch on wrong tile
+P06,gesture,19,rater2,0,1,0,Involuntary pinch selection activated while re-orienting hand
+P06,gesture,24,rater2,0,1,0,False positive pinch registered on invalid cell during reach phase
+P06,gesture,26,rater2,0,1,0,Errant pinch selection recorded before hand reached intended cell
+P06,gesture,27,rater2,0,1,0,Accidental selection triggered while hovering over adjacent tile
+P06,touch,3,rater2,0,0,0,
+P06,touch,6,rater2,1,0,0,"Glass surface tap failed to register, prompt cleared on second tap"
+P06,touch,12,rater2,0,0,0,
+P06,touch,13,rater2,0,0,0,
+P06,touch,18,rater2,0,0,0,
+P06,touch,23,rater2,0,0,0,
+P06,touch,26,rater2,0,0,0,
+P06,touch,30,rater2,0,0,0,
+P06,touch,35,rater2,0,0,0,
+P06,touch,40,rater2,0,1,0,Palm resting near screen edge registered unintended touch selection

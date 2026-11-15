@@ -1,0 +1,25 @@
+participant_id,mode,trial_id,video_file,fps,frame_action,frame_response,latency_ms,notes
+P01,gesture,17,P01_gesture.mp4,120,4072,4096,200.0,initial try missed (notAdjacent)
+P01,gesture,9,P01_gesture.mp4,120,2394,2420,216.7,pipeline latency spike (input_lat: 50.1ms)
+P01,touch,16,P01_touch.mp4,120,2594,2604,83.3,extended selection duration (2956.4ms)
+P01,touch,7,P01_touch.mp4,120,817,818,8.3,
+P02,gesture,24,P02_gesture.mp4,120,6805,6823,150.0,input delay ~ 29.7ms
+P02,gesture,11,P02_gesture.mp4,120,3085,3106,175.0,camera pipeline processing lag (input delay ~ 38.9ms)
+P02,touch,3,P02_touch.mp4,120,574,592,150.0,
+P02,touch,23,P02_touch.mp4,120,3397,3401,33.3,
+P03,gesture,18,P03_gesture.mp4,120,6758,6782,200.0,
+P03,gesture,15,P03_gesture.mp4,120,5606,5631,208.3,minor finger occlusion
+P03,touch,6,P03_touch.mp4,120,420,425,41.7,
+P03,touch,11,P03_touch.mp4,120,2653,2659,50.0,interaction near boundary
+P04,gesture,23,P04_gesture.mp4,120,5318,5332,116.7,
+P04,gesture,20,P04_gesture.mp4,120,4724,4746,183.3,
+P04,touch,15,P04_touch.mp4,120,1797,1800,25.0,
+P04,touch,17,P04_touch.mp4,120,1866,1872,50.0,
+P05,gesture,19,P05_gesture.mp4,120,3664,3705,341.7,
+P05,gesture,15,P05_gesture.mp4,120,2359,2374,125.0,
+P05,touch,13,P05_touch.mp4,120,1374,1381,58.3,
+P05,touch,23,P05_touch.mp4,120,2579,2600,175.0,
+P06,gesture,23,P06_gesture.mp4,120,9075,9100,208.3,
+P06,gesture,4,P06_gesture.mp4,120,396,410,116.7,
+P06,touch,7,P06_touch.mp4,120,283,289,50.0,
+P06,touch,11,P06_touch.mp4,120,1451,1456,41.7,interaction near boundary
