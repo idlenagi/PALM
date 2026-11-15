@@ -1,0 +1,29 @@
+@"
+# Flutter / Dart
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+*.iml
+.idea/
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+*.jks
+
+# Secrets and local data
+secrets.h
+**/secrets.h
+*.env
+
+# Study videos (participants were told these would not be published)
+*.mp4
+*.mov
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Set-Content -Encoding utf8 .gitignore
