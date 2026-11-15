@@ -9,10 +9,10 @@ import 'package:flutter/services.dart';
 import 'package:camera/camera.dart';
 import 'package:mqtt_client/mqtt_client.dart' show MqttQos;
 
-// Your Vision & Backend Imports
+//  Vision & Backend Imports
 import 'vision_isolate.dart';
 
-// Irma's Game Engine Imports
+//  Game Engine Imports
 import 'engine.dart';
 import 'tile_sound.dart';
 import 'flowing_gradient.dart';
@@ -107,7 +107,7 @@ abstract class InputProvider {
   void dispose();
 }
 
-/// Irma's Local Touch Provider
+/// Local Touch Provider
 class LocalInputProvider implements InputProvider {
   final _controller = StreamController<GameInputEvent>.broadcast();
   @override
@@ -130,7 +130,7 @@ class LocalInputProvider implements InputProvider {
   void dispose() => _controller.close();
 }
 
-/// The Bridge: Converts your Isolate coordinates to Irma's GameInputEvents
+/// The Bridge: Converts your Isolate coordinates to  GameInputEvents
 class SpatialInputProvider implements InputProvider {
   final _controller = StreamController<GameInputEvent>.broadcast();
   int currentGridSize = 3; // Dynamically updated by GameScreen
@@ -682,7 +682,7 @@ class _CameraPipelineStackState extends State<CameraPipelineStack>
 }
 
 // ============================================================================
-// 3. IRMA'S GAME UI ENGINE (Modified for Transparency & Grid Sync)
+// 3. GAME UI ENGINE (Modified for Transparency & Grid Sync)
 // ============================================================================
 class GameScreen extends StatefulWidget {
   const GameScreen({
