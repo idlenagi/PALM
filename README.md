@@ -64,9 +64,6 @@ The broker address is passed at build time with `--dart-define=MQTT_HOST=...`, s
 
 Note: the firmware as used in the study loses a share of QoS 1 echoes because of how the node handles MQTT, so QoS 1 results reflect that firmware and not the protocol (see report, Sections 6.5 and 7.3).
 
-
-The differences in the report's results table are medians of the per-participant paired differences (gesture minus touch). Latency in milliseconds is `(frame_response - frame_action) / 120 * 1000`. Tests are exact two-sided Wilcoxon signed-rank tests, and intervals are bootstrap 95% intervals of the mean paired difference (10,000 resamples).
-
 Session videos are **not** included, because participants were told they would not be published. Participants appear only as P01 to P06.
 
 ## Known limitations
