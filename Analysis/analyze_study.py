@@ -1,26 +1,9 @@
 #!/usr/bin/env python3
 """
-AetherGrid study analysis: touch vs gesture, one row per participant and mode.
-
-Usage (typical, real study):
-  python analyze_study.py --device P01_device_metrics.csv P02_device_metrics.csv ... \
-      --video latency_video.csv --observer observer_labels.csv \
-      --surveys surveys.csv --participants participants.csv --out results
-
 Testing on a dry-run file (participant_id empty, one participant):
   python analyze_study.py --device device_metrics.csv --fill-participant P00 \
       --exclude EXAMPLE --out dryrun_results
 
-Design decisions (state these in the paper):
-  * Unit of analysis is the participant: per-participant medians (or rates) per mode,
-    compared touch vs gesture with a Wilcoxon signed-rank test, plus the median/mean
-    paired difference, a bootstrap 95% CI, and the matched-pairs rank-biserial effect size.
-  * Accuracy is FIRST-ATTEMPT accuracy. Retries are reported separately.
-  * Selection time is measured on correct first attempts only.
-  * In-app input latency is NOT compared across modes (different start points).
-    Cross-mode latency comes from the 120 fps video (latency_video.csv).
-  * Observer labels: false negatives / false positives per trial; 'unclear' trials excluded.
-  * Results are exploratory (pilot). No multiple-comparison correction is applied.
 """
 import argparse
 import fnmatch
