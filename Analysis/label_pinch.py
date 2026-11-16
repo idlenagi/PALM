@@ -1,16 +1,4 @@
 """
-Mark the "pinch fully closed" frame on gesture trials you already labelled for latency.
-
-Why: latency_video.csv measures from the first frame where the fingers START closing to the first
-screen response. This tool adds one more mark per trial, the first frame where thumb and index
-finger TOUCH (pinch closed). Then, for each trial,
-    pinch_ms          = (frame_pinch_closed - frame_action)   / fps * 1000   (time the hand takes to close)
-    closed_to_resp_ms = (frame_response - frame_pinch_closed) / fps * 1000   (delay after the pinch is complete)
-so you can say how much of the video latency is just the hand closing.
-
-The action and response frames are read from latency_video.csv (you do not re-mark them). Results go to
-pinch_closed.csv. Nothing in latency_video.csv is changed.
-
 Install once:   pip install opencv-python pandas      (same as label_latency.py; keep both files in one folder)
 
 Use (one video at a time, using the trial ids listed for that participant):
