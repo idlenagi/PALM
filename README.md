@@ -29,7 +29,7 @@ Participant_data/       per-participant game logs (device_metrics/), video laten
                         pinch frames, observer labels, frame_marking_check/,
                         surveys.csv, participants.csv
 Benchmark/              MQTT QoS benchmark, 7 Nov and 12 Nov (tablet and ESP32 logs, summaries)
-analysis/               scripts that produce the tables and figures in the report,
+Analysis/               scripts that produce the tables and figures in the report,
                         and esp32_logger.py (reads the ESP32 serial log)
 ```
 File names use Taiwan time (UTC+8). Timestamps inside the logs are in UTC, so a run after midnight in Taiwan shows the previous date inside the file.
