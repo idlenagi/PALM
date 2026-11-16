@@ -1,20 +1,7 @@
 """
 Frame-by-frame latency labeller for the 120 fps phone video.
 
-It opens a video, lets you step through frames, mark the first frame of the action and the
-first frame of the screen response, and writes one row per trial into latency_video.csv.
-
 Install once:   pip install opencv-python pandas
-
-Typical use (one video = one participant + one mode):
-  # 1) Draw 5 random trials from that participant's game log (and save the draw to a text file)
-  python label_latency.py --video P01_gesture.mp4 --participant P01 --mode gesture ^
-        --device device_metrics_study_P01_gesture.csv --n 5 --seed 11
-
-  # 2) Or give the trial ids yourself
-  python label_latency.py --video P01_touch.mp4 --participant P01 --mode touch --trials 3 8 12 17 21
-
-Options: --fps 120 (default), --csv latency_video.csv (default), --width 1280 (display width).
 
 Keys (click the video window first):
   d / a   next / previous frame          c / z   +10 / -10 frames        v / x   +60 / -60 frames
@@ -26,9 +13,6 @@ Keys (click the video window first):
   n       skip this trial without saving (draw a replacement yourself and re-run with --trials)
   p       go back to the previous trial
   q       quit
-
-Frame numbers are 0-based (the first frame is 0). Use the same tool for every trial: latency is
-a difference of two frame numbers, so the numbering base cancels out.
 """
 import argparse
 import csv
