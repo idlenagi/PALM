@@ -24,12 +24,6 @@ Gesture was slower for all six participants and touch was preferred by all six. 
 
 ```
 Aether_Grid_App/        Flutter app (the game, input modes, logging, MQTT client)
-  lib/
-    main.dart
-    engine.dart, grid_matrix.dart, input_contract.dart
-    vision_isolate.dart       on-device hand tracking in a separate isolate
-    mqtt_service.dart         MQTT publishing
-    telemetry.dart            in-app timing and frame-time logging
 firmware_esp32_code/    ESP32 echo node (copy secrets.example.h to secrets.h)
 Participant_data/       per-participant game logs (device_metrics/), video latency,
                         pinch frames, observer labels, frame_marking_check/,
