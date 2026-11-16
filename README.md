@@ -64,15 +64,6 @@ The broker address is passed at build time with `--dart-define=MQTT_HOST=...`, s
 
 Note: the firmware as used in the study loses a share of QoS 1 echoes because of how the node handles MQTT, so QoS 1 results reflect that firmware and not the protocol (see report, Sections 6.5 and 7.3).
 
-## Reproducing the results
-
-`Participant_data/` and `Benchmark/` contain the logs, marked frame numbers, observer labels, questionnaires and benchmark data. Run the scripts in `analysis/` to regenerate the tables and figures, for example:
-
-```bash
-python analysis/analyze_study.py --device Participant_data/device_metrics/P0*_device_metrics.csv \
-  --video Participant_data/latency_video.csv --observer Participant_data/observer_labels.csv \
-  --surveys Participant_data/surveys.csv --participants Participant_data/participants.csv --out results
-```
 
 The differences in the report's results table are medians of the per-participant paired differences (gesture minus touch). Latency in milliseconds is `(frame_response - frame_action) / 120 * 1000`. Tests are exact two-sided Wilcoxon signed-rank tests, and intervals are bootstrap 95% intervals of the mean paired difference (10,000 resamples).
 
@@ -97,6 +88,4 @@ Session videos are **not** included, because participants were told they would n
 
 Apache-2.0. See the `LICENSE` file.
 
-## Citation
 
-Mulyadi, T. (2026). *Pinch or Tap? Touch versus Hand-Gesture Input in a Tablet Game. PALM: A Pilot Study of Accuracy, Latency and Mental Workload.* Undergraduate capstone report.
