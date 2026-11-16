@@ -1,7 +1,7 @@
 # PALM: Pinch or Tap?
 Pilot study of Accuracy, Latency and Mental workload: touch versus hand-gesture input in a tablet game.
 
-Author: Theresia Mulyadi (112006221), undergraduate capstone, November 2026.
+Author: Theresia Mulyadi (陳友平)
 
 ## What this project is
 
