@@ -1,0 +1,2 @@
+participant_id,first_mode,session_date,age,handedness,prior_gesture_experience_1to5,preference,consent_recorded,notes
+EXAMPLE,touch,2026-11-10,21,right,2,gesture,yes,example row - ignored by the script

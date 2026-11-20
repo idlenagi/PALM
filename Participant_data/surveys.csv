@@ -1,0 +1,3 @@
+participant_id,mode,sus_1,sus_2,sus_3,sus_4,sus_5,sus_6,sus_7,sus_8,sus_9,sus_10,tlx_mental,tlx_physical,tlx_temporal,tlx_performance,tlx_effort,tlx_frustration,borg_cr10,notes
+EXAMPLE,touch,4,2,4,1,4,2,5,1,4,2,30,10,20,15,25,10,0.5,example row
+EXAMPLE,gesture,3,3,4,2,3,3,4,2,3,3,35,50,30,40,45,40,4,example row
