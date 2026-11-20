@@ -25,21 +25,22 @@ Gesture was slower for all six participants and touch was preferred by all six. 
 ```
 Aether_Grid_App/        Flutter app (the game, input modes, logging, MQTT client)
 firmware_esp32_code/    ESP32 echo node (copy secrets.example.h to secrets.h)
-Participant_data/       per-participant game logs (device_metrics/), video latency,
+Participant_data/       per-participant game logs (Participant_Device_Metrics/), video latency,
                         pinch frames, observer labels, frame_marking_check/,
                         surveys.csv, participants.csv
 Benchmark/              MQTT QoS benchmark, 7 Nov and 12 Nov (tablet and ESP32 logs, summaries)
 Analysis/               scripts that produce the tables and figures in the report,
-                        and esp32_logger.py (reads the ESP32 serial log)
+                        and esp_logger.py (reads the ESP32 serial log)
 ```
 File names use Taiwan time (UTC+8). Timestamps inside the logs are in UTC, so a run after midnight in Taiwan shows the previous date inside the file.
+
 ## Requirements
 
-- Flutter (stable; run `flutter --version` and write the version here), with the Android toolchain
+- Flutter 3.47.5 or newer (Dart 3.13.5 or newer, as required by `pubspec.lock`), with the Android toolchain
 - An Android tablet. The study used a Xiaomi Pad 6 with the front camera
 - Mosquitto MQTT broker on a laptop on the same network (the study used a personal hotspot)
 - ESP32 board and the Arduino or PlatformIO toolchain for the firmware
-- Python 3 for `analysis/` (`pip install -r analysis/requirements.txt`)
+- Python 3 for `Analysis/` (`pip install -r Analysis/requirements.txt`)
 
 Hand tracking uses the [`hand_detection`](https://github.com/hugocornellier/hand_detection) Flutter package, version 4.3.1 (Apache-2.0), an implementation of Google's MediaPipe hand detection and landmark models on TensorFlow Lite. It is pinned in `pubspec.lock`.
 
@@ -60,11 +61,22 @@ The broker address is passed at build time with `--dart-define=MQTT_HOST=...`, s
 
 1. Copy `firmware_esp32_code/secrets.example.h` to `firmware_esp32_code/secrets.h` and fill in your Wi-Fi and broker details. `secrets.h` is ignored by git and must never be committed.
 2. Build and flash the firmware.
-3. On the laptop, run `python analysis/esp32_logger.py` to record the node's own timings from the USB serial port.
+3. On the laptop, run `python Analysis/esp_logger.py` to record the node's own timings from the USB serial port.
 
 Note: the firmware as used in the study loses a share of QoS 1 echoes because of how the node handles MQTT, so QoS 1 results reflect that firmware and not the protocol (see report, Sections 6.5 and 7.3).
 
 Session videos are **not** included, because participants were told they would not be published. Participants appear only as P01 to P06.
+
+## Running the analysis
+
+From the repository root, install the requirements and see the options of the main script:
+
+```bash
+pip install -r Analysis/requirements.txt
+python Analysis/analyze_study.py --help
+```
+
+`analyze_study.py` reads the files in `Participant_data/` (device metrics, `latency_video.csv`, `observer_labels.csv`, `surveys.csv`, `participants.csv`) and writes the tables used in the report. `analyze_infra.py` does the same for the MQTT benchmark in `Benchmark/`.
 
 ## Known limitations
 
@@ -84,5 +96,3 @@ Session videos are **not** included, because participants were told they would n
 ## License
 
 Apache-2.0. See the `LICENSE` file.
-
-
