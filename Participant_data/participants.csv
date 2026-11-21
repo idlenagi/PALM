@@ -1,0 +1,7 @@
+participant_id,first_mode,session_date,age,handedness,prior_gesture_experience_1to5,preference,consent_recorded,notes
+P01,touch,2026-11-07,21,right,1,touch,yes,
+P02,gesture,2026-11-07,22,right,1,touch,yes,
+P03,touch,2026-11-07,21,right,1,touch,yes,
+P04,gesture,2026-11-07,21,right,1,touch,yes,glasses
+P05,touch,2026-11-07,21,right,1,touch,yes,
+P06,gesture,2026-11-07,21,right,1,touch,yes,glasses
